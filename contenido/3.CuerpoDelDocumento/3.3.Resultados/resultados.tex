@@ -1,7 +1,6 @@
-
-%____ ____ ____ _  _ _    ___ ____ ___  ____ ____ 
-%|__/ |___ [__  |  | |     |  |__| |  \ |  | [__  
-%|  \ |___ ___] |__| |___  |  |  | |__/ |__| ___]
+%%%%%%%%%%%%%%%%
+%% RESULTADOS %%
+%%%%%%%%%%%%%%%%
 
 \section{Resultados}
 \lipsum[1]
@@ -28,4 +27,29 @@
 	\label{fig:Figure1}
 \end{figure}
 
+\lipsum[2]
+
+\begin{table}[h]
+	\begin{threeparttable}
+	  \caption{A More Complex Decked Table}
+	  \label{tab:DeckedTable}
+	  \begin{tabular}{@{}lrrr@{}}         \toprule
+	  Distribution type  & \multicolumn{2}{l}{Percentage of} & Total number   \\
+						 & \multicolumn{2}{l}{targets with}  & of trials per  \\
+						 & \multicolumn{2}{l}{segment in}    & participant    \\ \cmidrule(r){2-3}
+									  &  Onset  &  Coda            &          \\ \midrule
+	  Categorical -- onset\tabfnm{a}  &    100  &     0            &  196     \\
+	  Probabilistic                   &     80  &    20\tabfnm{*}  &  200     \\
+	  Categorical -- coda\tabfnm{b}   &      0  &   100\tabfnm{*}  &  196     \\ \midrule
+	  \end{tabular}
+	  \tablenote{All data are approximate.
+  
+			  \tabfnt{a}Categorical may be onset.
+			  \tabfnt{b}Categorical may also be coda.
+  
+			  \tabfnt{*}\textit{p} < .05.
+			  \tabfnt{**}\textit{p} < .01.
+		   }
+	\end{threeparttable}
+  \end{table}
 \lipsum[1]

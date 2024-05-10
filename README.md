@@ -1,6 +1,7 @@
 # PLANTILLA PARA DOCUMENTOS APA 7
+
 ## Plantilla LaTeX APA 7
-Esta plantilla LaTeX te permite crear documentos con formato APA 7 de manera rápida y sencilla.
+Esta plantilla LaTeX en Español te permite crear documentos con formato APA 7 de manera rápida y sencilla. Está basada en los ejemplos proporcionados por el creador del paquete ```apa7``` Daniel A. Weiss.
 
 ## ¿Qué es APA 7?
 

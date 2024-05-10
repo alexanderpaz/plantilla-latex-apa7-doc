@@ -1,12 +1,6 @@
-%  ____  ____  _____    _    __  __ ____  _   _ _     ___  
-% |  _ \|  _ \| ____|  / \  |  \/  | __ )| | | | |   / _ \ 
-% | |_) | |_) |  _|   / _ \ | |\/| |  _ \| | | | |  | | | |
-% |  __/|  _ <| |___ / ___ \| |  | | |_) | |_| | |__| |_| |
-% |_|   |_| \_\_____/_/   \_\_|  |_|____/ \___/|_____\___/
-
-
-% Define the document class as "man" for APA style with floats allowed in text
-\documentclass[man, floatsintext]{apa7}
+%%%%%%%%%%%%%%%
+%% PREÁMBULO %%
+%%%%%%%%%%%%%%%
 
 % Set up Spanish language support and Spanish table formatting
 \usepackage[spanish, es-tabla]{babel}
@@ -19,7 +13,7 @@
 
 % Configura biblatex para el estilo APA con ordenación por autor, citas nombre-año, backend biber
 \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
-\bibliography{contenido/4.Referencias/bibliografia.bib}
+\addbibresource{contenido/4.Referencias/bibliografia.bib}
 
 % Carga el paquete csquotes para un manejo inteligente de comillas
 \usepackage{csquotes}
@@ -27,18 +21,13 @@
 % Carga varios paquetes para tablas, texto verbatim, gráficos y URLs
 \usepackage{array,fancyvrb,graphicx,verbatim,xurl}
 
-% FOR GENERATING TEXT (uncomment to use)
-\usepackage{lipsum}  % Note: This line is commented out
+% Para generar texto de relleno
+\usepackage{lipsum} 
 
-% Uncomment these lines for biblatex configuration (already configured above)
-%\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
-%\DeclareLanguageMapping{american}{american-apa}
-%\addbibresource{referencias/bibliografia.bib}
+% Para el manejo de apéndices
+\usepackage{appendix}
 
-% % Uncomment this line for custom left header (not recommended for APA style)
-% %\leftheader{Weiss}	  
-
-% No cambiar
+% No cambiar - Asignación de variables
 \title{\titulo}  
 \shorttitle{\titulocorto}  
 \author{\autor} 

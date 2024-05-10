@@ -1,8 +1,6 @@
-                                                             
-% ____ ____ ___ ____ _  _ ____ ___ _  _ ____ ____ 
-% |___ [__   |  |__/ |  | |     |  |  | |__/ |__| 
-% |___ ___]  |  |  \ |__| |___  |  |__| |  \ |  |
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ESTRUCTURA DEL DOCUMENTO %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{configuracion/preambulo.tex}
 % TODO: Comentar para generar el documento completo
@@ -21,11 +19,11 @@
 	
 	
 	% OPCIONAL:
-	%\tableofcontents
-	
+	\tableofcontents
+	\newpage
 	
 	% INTRODUCCIÓN
-	\section{Introducción}
+	\section{\titulo}
 	\input{contenido/3.CuerpoDelDocumento/3.1.Introduccion/introduccion.tex}
 	
 	
@@ -51,6 +49,12 @@
 	% OPCIONAL: Figuras
 	
 	% OPCIONAL: Apendices
-	% \appendix
+	\appendix
+	\addcontentsline{toc}{section}{Apéndice A}
+	\include{contenido/5.Apendices/apendice1.tex}
+	\addcontentsline{toc}{section}{Apéndice B}
+	\include{contenido/5.Apendices/apendice2.tex}
+	
+
 
 \end{document}
