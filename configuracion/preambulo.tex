@@ -1,3 +1,14 @@
+%  ____  ____  _____    _    __  __ ____  _   _ _     ___  
+% |  _ \|  _ \| ____|  / \  |  \/  | __ )| | | | |   / _ \ 
+% | |_) | |_) |  _|   / _ \ | |\/| |  _ \| | | | |  | | | |
+% |  __/|  _ <| |___ / ___ \| |  | | |_) | |_| | |__| |_| |
+% |_|   |_| \_\_____/_/   \_\_|  |_|____/ \___/|_____\___/
+
+
+% Define the document class as "man" for APA style with floats allowed in text
+\documentclass[man, floatsintext]{apa7}
+
+% Set up Spanish language support and Spanish table formatting
 \usepackage[spanish, es-tabla]{babel}
 
 % Permite la codificación UTF-8 para caracteres
@@ -16,11 +27,19 @@
 % Carga varios paquetes para tablas, texto verbatim, gráficos y URLs
 \usepackage{array,fancyvrb,graphicx,verbatim,xurl}
 
-% PARA GENERAR TEXTO RANDOM
-\usepackage{lipsum}  
+% FOR GENERATING TEXT (uncomment to use)
+\usepackage{lipsum}  % Note: This line is commented out
 
-% (No cambiar)
-\title{\titulo}
-\shorttitle{\titulocorto}
-\author{\autor}
-\affiliation{\afiliacion}
+% Uncomment these lines for biblatex configuration (already configured above)
+%\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+%\DeclareLanguageMapping{american}{american-apa}
+%\addbibresource{referencias/bibliografia.bib}
+
+% % Uncomment this line for custom left header (not recommended for APA style)
+% %\leftheader{Weiss}	  
+
+% No cambiar
+\title{\titulo}  
+\shorttitle{\titulocorto}  
+\author{\autor} 
+\affiliation{\afiliacion} 
