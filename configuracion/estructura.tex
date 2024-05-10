@@ -1,0 +1,47 @@
+\input{configuracion/preambulo.tex}
+% TODO: Comentar para generar el documento completo
+%\includeonly{contenido/introduccion}
+
+\begin{document}
+	% INCLUSIÓN DE DATOS DE RESUMEN / ABSTRACT
+	\input{contenido/2.Resumen-Abstract/abstract-resumen.tex}
+	
+	
+	% PORTADA
+	\maketitle
+	
+	
+	% OPCIONAL:
+	%\tableofcontents
+	
+	
+	% INTRODUCCIÓN
+	\section{Introducción}
+	\input{contenido/3.CuerpoDelDocumento/3.1.Introduccion/introduccion.tex}
+	
+	
+	% METODO
+	\include{contenido/3.CuerpoDelDocumento/3.2.Metodo/metodo.tex}
+	
+	
+	% RESULTADOS
+	\include{contenido/3.CuerpoDelDocumento/3.3.Resultados/resultados.tex}
+
+	
+	% DISCUSIÓN
+	\include{contenido/3.CuerpoDelDocumento/3.4.Discusion/discusion.tex}
+	
+
+	% REFERENCIAS
+	\printbibliography	
+	
+	% OPCIONAL: Notas al Pie de Página o Notas al Final
+
+	% OPCIONAL: Tablas
+	
+	% OPCIONAL: Figuras
+	
+	% OPCIONAL: Apendices
+	% \appendix
+
+\end{document}

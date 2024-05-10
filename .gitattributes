@@ -1,2 +1,19 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+/**/*.log
+/**/*.aux
+/**/*.dvi
+/**/*.lof
+/**/*.lot
+/**/*.bit
+/**/*.idx
+/**/*.glo
+/**/*.bbl
+/**/*.bcf
+/**/*.ilg
+/**/*.toc
+/**/*.ind
+/**/*.out
+/**/*.blg
+/**/*.fdb_latexmk
+/**/*.fls
+/**/*.run.xml
+/**/*.pdf
